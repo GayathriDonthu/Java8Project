@@ -21,7 +21,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>3.7.0</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -31,8 +31,10 @@
 					<showWarnings>true</showWarnings>
 					<encoding>UTF-8</encoding>
 					<verbose>true</verbose> <!-- to show all objects loaded -->
-					<compilerArgument>-Xlint:all</compilerArgument> <!-- to display command line args  -->
-					<compilerArgument>-parameters</compilerArgument> <!-- to retain the arguments passed to methods in .class file -->
+					 <compilerArgs>
+					 	<arg>-Xlint:all</arg> <!-- to display command line args  -->
+					 	<arg>-parameters</arg> <!-- to retain the arguments passed to methods in .class file -->
+					 </compilerArgs> 
 				</configuration>
 			</plugin>
 
